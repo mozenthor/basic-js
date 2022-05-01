@@ -30,7 +30,7 @@ const { NotImplementedError } = require('../extensions/index.js');
           isNaN(obj[`.${domains[k].slice(0, i+1).join('.')}`]) ? obj[`.${domains[k].slice(0, i+1).join('.')}`] =1 : obj[`.${domains[k].slice(0, i+1).join('.')}`]+=1
       }
   }
-  return obj['poi']
+  return obj
 }
 
 module.exports = {
